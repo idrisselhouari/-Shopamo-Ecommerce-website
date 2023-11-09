@@ -1,0 +1,139 @@
+/*the header*/
+:root{
+  --var_bleu:#44bae6;
+  --var_bleu2: #4265a5;
+}
+input:focus, select:focus{
+  outline: 0;
+}
+/*FOR THE HOME PAGE*/
+#headerBlock{ /*for the header completely*/
+  display: grid;
+  grid-template-columns: 20% 1fr 20% ;
+  height: 60px;
+  background-color: rgb(213, 228, 233);
+  box-shadow: 0 0 20px rgba(191, 218, 228, 0.372);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+#HlogoBlock{ /* for the logo in header*/
+  margin-left: 15%;
+  width: 110%;
+  display: flex;
+  align-items: center;
+}
+#search, #search:hover{  /*for the elements the search*/
+  height: 30px;
+  width: 80%;
+  padding-left: 5px;
+  border: 0 #ffffff;
+  margin: 0 1% ;
+  border-radius: 15px;
+}
+#searchBlock{ /* for the search and the categories and the search submit*/
+  width: 70%;
+  height: max-content;
+  display: flex;
+  align-items: center !important;
+  margin: auto auto;
+  border: 0.1px solid #ffffff;
+  border-radius: 20px;
+  background-color: #ffffff;
+}
+#CategorieMenu{
+   padding-left: 10px;
+}
+#headerMenu ul{
+  width: 250px;
+}
+#searchButton{ color: #ffffff; background-color: var(--var_bleu); width: auto; height: 35px; border-radius: 14px; border-color: var(--var_bleu); border: 0; }
+#cartBlock{/* for the cart */
+  width: 37%;
+  padding: 0 20%;
+  display: flex;
+  align-items: center;
+}
+.cartCount{
+  color:var(--var_bleu);
+  background-color: #fff;
+  padding: 4px;
+  border-radius: 10px;
+  width: 60%;
+  text-align: center;
+}
+/*********************************************************************/
+/*footer*/
+#FlogoBlock{
+  font-size: 50px;
+  height: auto;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(191, 218, 228, 0.372);
+  background-color: rgba(191, 218, 228, 0.372);
+}
+#footerBlock{ 
+  display: grid;
+  grid-template-rows: 30% 1fr 6%;
+  bottom: 0;
+  margin-top: 20px;
+}
+#mainFooter{
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  background-color: aliceblue;
+}
+#contacterNous span { background-color: var(--var_bleu);font-size: 20px; border-radius: 15px; color: rgb(248, 252, 255); margin-left: 17%; margin-right: 5px;}
+#suivezNous h2{margin: 1% auto 1% 19%; color: #2e59a8;} 
+#contacterNous h2{ margin: 1% auto 1% 51%; color: #2e59a8;}
+#contacterNous ul{ list-style: none; margin: 1% auto 1% 29%; }
+#contacterNous a{text-decoration: none; color: black; }
+#suivezNous ul{list-style: none; margin: 2% auto 1% 17%; } 
+#socialMedia li { display: inline; } 
+#suivezNous ul li a img { width: 25px; margin: 0 8px 0 0;}
+#copyright { height: max-content; text-align: center; background-color: var(--var_bleu); color: #ffffff;}
+/************************************************************************/
+#blockContent{
+  margin: 10px;
+}
+/*For the categories exemples in the home page*/
+.names{
+    color: #000;
+    font-weight: 700;
+    max-width: 500px;
+    padding: 5px 0 0 10px;
+    margin: 3px 0;
+}
+.content{
+    display: flex;
+    text-align: center; 
+}
+.tout{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+/*.text{
+    font-weight: 550;
+    font-size: 15px;
+    color: #fff;
+    text-align: right;
+    line-height: 24px;
+    left: 367px;
+    position: absolute;
+    top: 13px;
+    background: #3b8fdf;
+    padding-right: 3px;
+    font-family:cursive;
+}*/
+#linkCategories{
+    margin-left: 15px;
+    padding-bottom: 1%;
+    color: var(--var_bleu2);
+    font-weight: bolder;
+}
+.categoriesExemples{
+  width: 48%;
+  display: inline-flex;
+  margin: 10px 10px;
+}
+
+/**********************************************/

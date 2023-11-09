@@ -1,0 +1,75 @@
+/*For the div of the slide */
+#sliderbar{
+    width: 60%;
+    height: auto;
+    overflow: hidden;
+    margin: 0 0 0 8%;
+}
+.main-slider{
+    height: 325px;
+    position: relative;
+}
+/*For the div of the slide*/
+.slide-image{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+/*For the images of the slide*/
+.slide-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+  
+}
+/* For the buttons next and previons*/
+.next-btn, .prev-btn{
+    opacity: 0.3;
+    position: absolute;
+    top: 42%;
+    transform: translateY(-50%);
+    z-index: 1;
+    cursor: pointer;
+    transition: 400ms;
+    overflow: hidden;
+}
+.next-btn:hover, .prev-btn:hover{
+    opacity: 1;
+}
+.prev-btn{
+    left: 42.5%;
+}
+.next-btn{
+   right:10%;
+}
+/* Navigation dot*/
+.navigation-dots{
+    display: flex;
+    height: 32px;
+    align-items: center;
+    justify-content: center;
+    margin: 16px 0;
+}
+/*For the single dot */
+.single-dot{
+    background-color: #333;
+    height: 14px;
+    width: 14px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    margin: 0 8px;
+    cursor: pointer;
+    transition: 400ms;
+}
+/* For the active single dot*/
+.single-dot.active{
+    background-color: #eee;
+}
+/* For the the bar (aside Categories + Slider)*/
+#bar{
+    display: flex;
+    margin: 2% 10% 0% 10%;
+    height: max-content;
+    justify-content: space-between;
+}

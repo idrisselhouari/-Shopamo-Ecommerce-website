@@ -1,0 +1,142 @@
+:root{
+    --var_bleu:#44bae6;
+    --var_icon:#33528b;
+}
+header,aside{
+    color: #fff;
+}
+/*For the header bar*/
+.dashboard span{
+    color: var(--var_icon);
+    margin-right: 1px;
+}
+header{
+    position: sticky !important;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 50px;
+    margin-left: 20%;
+    background-color: var(--var_bleu);
+    align-items: center;
+}
+input:focus{
+    outline: 0;
+}
+/*.searchBar img{
+    width: 18px;
+    margin: 0 5px 0 5px;
+}
+.searchBar input {
+    border: 0;
+    font-size: 17px;
+}
+.searchBar{
+    border: 1px solid #eee;
+    height: 40px;
+    width: 30%;
+    background-color: #fff;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}*/
+.user{
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+    text-align: center;
+}
+.user img{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+.user h3{
+    margin: 0;
+}
+/*End header block*/
+.aside_bar{
+    width: 20%;
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    height: 100%;
+    background-color: var(--var_bleu);
+}
+/*for the side bar after diplay:none*/
+#aside_bar.active .List span:last-child{
+    display: none;
+}
+#aside_bar.active h2 span:last-child{
+    display: none !important;
+}
+#aside_bar.active{
+  width: 4%;
+}
+#aside_bar.active ul{
+    padding-left: 14px;
+}
+#aside_bar.active ~ header{
+    width: 96%;
+    margin-left: 4%;
+}
+#aside_bar.active ~ #mainDashboard{
+    width: 94%;
+    margin-left: 5%;
+}
+/*********************************/
+.title_dashboard span{
+    font-size: 25px;
+    letter-spacing: 3px;
+    margin: 0 2px;
+}
+.title_dashboard{
+    height: 60px;
+    text-align: center;
+}
+.aside_bar_menu .item{
+    width: 100%;
+    list-style: none;
+    padding: 10px 0;
+    color: white;
+    font-size: 1.1rem;
+    margin: 8px 0;
+}
+.List{
+    display: flex;
+    align-items: center;
+}
+.sousList{
+    display: none;
+}
+.sousList ul{
+    padding-left: 20px;
+}
+.sousList li{
+    padding: 10px;
+    margin: 10px 0;
+}
+.icon{
+    margin: 0 5px 0 4px;
+}
+.item:active  .icon,.item:hover  .icon{
+    background-color: var(--var_bleu);
+    border-radius: 8px;
+}
+.List:active , .List:hover{
+    background: #fff;
+    font-size: 1.2rem;
+    color: var(--var_bleu);
+    border-radius: 10px 0 0 10px;
+    width: 100%;
+    padding: 8px 0;
+}
+
+/*For the dashboard main*/
+#mainDashboard{
+    margin: 20px 0px 20px 20%;
+}
+
+/*PAGE CONNEXION*/

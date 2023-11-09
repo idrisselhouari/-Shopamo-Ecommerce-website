@@ -1,0 +1,95 @@
+/*For the categories*/
+#asideCategories{
+    width: 25%;
+    text-align: right;
+    display: block;
+    margin: 0% 8% 0 0;
+}
+#verticalMenu, #verticalMenu ul, #verticalMenu a,#headerMenu ul, #headerMenu a {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+#verticalMenu ul, #headerMenu ul{
+    margin: 0;
+    padding: 0;
+}
+.categoriesTitle h4{
+    text-align: center;
+    background-color: rgba(109, 173, 196, 0.372);
+    border: 0;
+    margin: 0;
+    box-shadow: 0 0 10px rgba(224, 234, 238, 0.372);
+    border-radius: 10px 10px 0 0;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    height: 20px;
+}
+.underMenu{
+    display: none;
+    top: inherit;
+    left: 25%;
+    float: left;
+    z-index: 400;
+    text-align: left;
+    position: absolute;
+    box-shadow: 0 0 10px rgba(224, 234, 238, 0.372);
+    padding: 0;
+    background-color: #ffffff;
+    width: 20%; 
+}
+.headerUnderMenu li:hover, .underMenu li:hover{
+    font-weight: bold;
+}
+.parentMenu:hover, .headerUnderMenu li:hover, .underMenu li:hover{
+    border-bottom:1px solid rgb(170, 167, 167);
+}
+.underMenu li, .parentMenu{
+    box-shadow: 0 0 30px rgba(191, 218, 228, 0.372);
+    margin: 0;
+    padding: 15px 0 10px 0;
+    text-align: left;
+    height: 30px;
+    background-color: #ffffff;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+#verticalMenu,#headerMenu{
+    display: contents;
+    padding: 0;
+    margin: 0 5% 0 5%;
+    width: 15%;
+}
+/*Hor the categrie in the header*/
+.headerUnderMenu{
+    display: none;
+    top: inherit;
+    left: 90%;
+    float: left;
+    z-index: 400;
+    text-align: left;
+    position: absolute;
+    padding: 0;
+    background-color: #ffffff;
+    border: 0.2px solid #ccd0d1;
+    border-radius: 10px;
+    width: 100%;
+}
+#headerMenu{
+    display: none ;
+    position: absolute;
+    top: 68%;
+    left: 7%;
+    border: none;
+    padding: 0;
+}
+.headerUnderMenu li{
+    box-shadow: 0 0 30px rgba(191, 218, 228, 0.372);
+    margin: 0;
+    padding: 15px 0 10px 0;
+    text-align: left;
+    height: 30px;
+    background-color: #ffffff;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}

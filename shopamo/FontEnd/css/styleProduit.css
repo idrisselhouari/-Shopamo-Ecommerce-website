@@ -1,0 +1,91 @@
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #eee;
+}
+/*For the images in the product page*/
+#productDetailles{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+#productDetailles .single-pro-img{
+    width: 30%;
+    margin-right: 50px;
+    margin-left: 5%;
+}
+.small-img-group{
+    display: flex;
+    justify-content: space-between;
+}
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+#productDetailles .productInformations{
+    width: 50%;
+    padding-top: 30pxy;
+}
+
+.product{
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-basis: auto;
+}
+.product h1{
+    max-width: 90%;
+    max-height: 15%;
+    margin: 25px 0;
+}
+#size, .PanierSize, .PanierQuantite{
+    padding: 1%;
+    margin:2% 3% 1% 0;
+    border: 1px solid #44bae6;
+    border-radius: 10px;
+}
+.product h4{
+    margin: 20px;
+    font-size: 22px;
+    font-weight: bold;
+}
+#quantite{
+    width: 50px;
+    height: 30px;
+    padding-left: 10px;
+    margin-right: 10px;
+    border: 1px solid #44bae6;
+    border-radius: 10px;
+}
+#productInfo input::selection{
+    border: 1px solid #44bae6;
+}
+a{
+    text-decoration: none;
+}
+.btn{
+    display: inline-block;
+    background: #44bae6;
+    color: #fff;
+    padding: 8px 10px;
+    margin: 2% 0 2% 2%;
+    border: 0;
+    border-radius: 15px;
+    min-width: 20%;
+}
+.btn:hover{
+    color: #44bae6;
+    background-color: #fff;
+    border: 1px solid #44bae6;
+}
+/* */
+
+@media screen and (max-width: 545px) {
+    .btn{
+        width: 30%;
+        font-size: small;
+    }
+   #productInfo label{
+        font-size: small;
+    }
+}
